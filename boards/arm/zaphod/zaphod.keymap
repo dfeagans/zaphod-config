@@ -21,12 +21,6 @@
     combos {
         compatible = "zmk,combos";
 
-        med_mo {
-	    timeout-ms = <50>;
-            key-positions = <30 31>;
-            bindings = <&mo MED_L>;
-        };
-
         fn_mo {
 	    timeout-ms = <50>;
             key-positions = <32 33>;
