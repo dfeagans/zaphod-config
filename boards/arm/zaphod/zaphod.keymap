@@ -66,10 +66,10 @@
         sym_layer {
             label = "Sym";
             bindings = <
-                &kp Q      &kp W      &kp E       &kp R          &kp T            &kp Y            &kp U          &kp I           &kp O          &kp P
-                &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F    &kp G            &kp H            &hm RSHFT J    &hm RCTRL K     &hm LALT L     &hm LGUI QUOT
-                &kp Z      &kp X      &kp C       &kp V          &kp B            &kp N            &kp M          &mt SEMI COMMA  &mt COLON DOT  &kp FSLH
-                                                  &lt NAV_L TAB  &lt OTH_L SPACE  &kp RET    &lt SYM_L BKSP
+                &kp N1    &kp N2     &kp N3    &kp N4     &kp n5    &kp N6       &kp N7     &kp N8    &kp N9     &kp N0
+                &kp LT    &kp PRCNT  &kp LPAR  &kp LBRC   &kp LBKT  &kp EQUAL    &kp QMARK  &kp UNDER &kp PLUS   &kp STAR
+                &kp GT    &kp DLLR   &kp RPAR  &kp RBRC   &kp RBKT  &kp AT       &kp EXCL   &kp DQT   &kp MINUS  &kp FLSH
+                                               &trans     &trans    &trans       &trans
             >;
         };
         
