@@ -31,6 +31,71 @@
         };
     };
 
+
+    macros {
+        DIA: DIA {
+            label = "Diameter";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N2 &kp KP_N1 &kp KP_N6>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        DEG: DEG {
+            label = "Degrees";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N6>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        DELTA: DELTA {
+            label = "Delta Triangle";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N3 &kp KP_N0>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        POW1: POW1 {
+            label = "Power 1";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N5>
+                , <&macro_release &kp LALT>
+                ;
+        }; 
+        POW2: POW2 {
+            label = "Power 2";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N8>
+                , <&macro_release &kp LALT>
+                ;
+        };
+        POW3: POW3 {
+            label = "Power 3";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N0 &kp KP_N1 &kp KP_N7 &kp KP_N9>
+                , <&macro_release &kp LALT>
+                ;
+        }; 
+    };
+    
+    
     keymap {
         compatible = "zmk,keymap";
 
@@ -58,7 +123,7 @@
         nav_layer {
             label = "Nav";
             bindings = <
-                &kp ESC    &kp UNDER  &trans      &trans          &kp HASH      &kp PG_UP        &kp HOME       &kp UARW    &kp END    &kp CAPS
+                &kp ESC    &kp UNDER  &kp DELTA   &kp DIA         &kp HASH      &kp PG_UP        &kp HOME       &kp UARW    &kp END    &kp CAPS
                 &kp CARET  &kp TILDE  &kp BSLH    &kp PIPE        &kp AMPS      &kp PG_DN        &kp LARW       &kp DARW    &kp RARW   &kp DEL
                 &trans     &trans     &trans      &trans          &trans        &trans           &kp BKSP       &trans      &trans     &trans
                                                   &trans          &trans        &kp DEL          &kp ESC
@@ -69,7 +134,7 @@
             label = "Fun";
             bindings = <
                 &kp F1     &kp F2     &kp F3      &kp F4     &kp F5      &kp F6      &kp F7     &kp F8      &kp F9     &kp F10
-                &trans     &trans     &trans      &trans     &trans      &kp F11     &kp F12    &kp PSCRN   &kp SLCK   &trans
+                &trans     &kp POW1   &kp POW2    &kp POW3   &trans      &kp F11     &kp F12    &kp PSCRN   &kp SLCK   &trans
                 &trans     &trans     &trans      &trans     &trans      &trans      &trans     &trans      &trans     &trans
                                                   &trans     &trans      &trans      &trans
             >;
