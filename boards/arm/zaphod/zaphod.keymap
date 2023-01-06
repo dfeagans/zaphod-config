@@ -53,7 +53,7 @@
                 , <&macro_release &kp LALT>
                 ;
         };
-        DELTA: DELTA {
+        DELT: DELT {
             label = "Delta Triangle";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -123,7 +123,7 @@
         nav_layer {
             label = "Nav";
             bindings = <
-                &kp ESC    &kp UNDER  &kp DELTA   &kp DIA         &kp HASH      &kp PG_UP        &kp HOME       &kp UARW    &kp END    &kp CAPS
+                &kp ESC    &kp UNDER  &kp DELT    &kp DIA         &kp HASH      &kp PG_UP        &kp HOME       &kp UARW    &kp END    &kp CAPS
                 &kp CARET  &kp TILDE  &kp BSLH    &kp PIPE        &kp AMPS      &kp PG_DN        &kp LARW       &kp DARW    &kp RARW   &kp DEL
                 &trans     &trans     &trans      &trans          &trans        &trans           &kp BKSP       &trans      &trans     &trans
                                                   &trans          &trans        &kp DEL          &kp ESC
