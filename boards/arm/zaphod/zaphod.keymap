@@ -53,6 +53,16 @@
                 , <&macro_release &kp LALT>
                 ;
         };
+        PM: PM {
+            label = "PlusMinus";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press   &kp LALT>
+                , <&macro_tap     &kp KP_N2 &kp KP_N4 &kp KP_N1>
+                , <&macro_release &kp LALT>
+                ;
+        };
         DELTA: DELTA {
             label = "Delta Triangle";
             compatible = "zmk,behavior-macro";
@@ -134,7 +144,7 @@
             label = "Fun";
             bindings = <
                 &kp F1     &kp F2     &kp F3      &kp F4     &kp F5      &kp F6      &kp F7     &kp F8      &kp F9     &kp F10
-                &trans     &DEG       &POW1       &POW2      &POW3       &kp F11     &kp F12    &kp PSCRN   &kp SLCK   &trans
+                &PM        &DEG       &POW1       &POW2      &POW3       &kp F11     &kp F12    &kp PSCRN   &kp SLCK   &trans
                 &trans     &trans     &trans      &trans     &trans      &trans      &trans     &trans      &trans     &trans
                                                   &trans     &trans      &trans      &trans
             >;
