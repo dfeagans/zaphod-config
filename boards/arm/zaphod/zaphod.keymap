@@ -113,7 +113,7 @@
             label = "Base";
             bindings = <
                 &kp Q      &kp W      &kp E       &kp R          &kp T            &kp Y            &kp U          &kp I           &kp O          &kp P
-                &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F    &kp G            &kp H            &hm RSHFT J    &hm RCTRL K     &hm LALT L     &hm LGUI QUOT
+                &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHFT F    &kp G            &kp H            &hm RSHFT J    &hm RCTRL K     &hm LALT L     &hm DQT QUOT
                 &kp Z      &kp X      &kp C       &kp V          &kp B            &kp N            &kp M          &mt SEMI COMMA  &mt COLON DOT  &kp FSLH
                                                   &lt OTH_L TAB  &lt NAV_L SPACE  &lt SYM_L BKSP    &lt FUN_L RET
             >;
@@ -124,8 +124,8 @@
             label = "Sym";
             bindings = <
                 &kp N1      &kp N2          &kp N3          &kp N4           &kp N5    &kp N6       &kp N7           &kp N8            &kp N9          &kp N0
-                &hm LGUI LT &hm LALT PRCNT  &hm LCTRL LPAR  &hm LSHFT LBRC   &kp LBKT  &kp EQUAL    &hm RSHFT QMARK  &hm RCTRL UNDER   &hm LALT PLUS   &hm LGUI STAR
-                &kp GT      &kp DLLR        &kp RPAR        &kp RBRC         &kp RBKT  &kp AT       &kp EXCL         &kp DQT           &kp MINUS       &kp FSLH
+                &hm LGUI LT &hm LALT PRCNT  &hm LCTRL LPAR  &hm LSHFT LBRC   &kp LBKT  &kp EQUAL    &hm RSHFT QMARK  &hm RCTRL UNDER   &hm LALT PLUS   &kp STAR
+                &kp GT      &kp DLLR        &kp RPAR        &kp RBRC         &kp RBKT  &kp AT       &kp EXCL         &kp MINUS         &kp DOT         &kp FSLH
                                                             &trans           &trans    &trans       &trans
             >;
         };
